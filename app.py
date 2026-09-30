@@ -10,12 +10,12 @@ from langchain.chains.question_answering import load_qa_chain
 import platform
 
 # App title and presentation
-st.title('Generación Aumentada por Recuperación (RAG) 💬')
+st.title('Deja que el gato analice tus pdf (el gato le sabe)🐱💬')
 st.write("Versión de Python:", platform.python_version())
 
 # Load and display image
 try:
-    image = Image.open('Chat_pdf.png')
+    image = Image.open('gato.jpg')
     st.image(image, width=350)
 except Exception as e:
     st.warning(f"No se pudo cargar la imagen: {e}")
